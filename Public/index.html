@@ -15,31 +15,31 @@
     </div>
     <div data-key="83" class="key">
       <kbd>S</kbd>
-      <span class="sound">godscream</span>
+      <span class="sound">scream1</span>
     </div>
     <div data-key="68" class="key">
       <kbd>D</kbd>
-      <span class="sound">---</span>
+      <span class="sound">scream2</span>
     </div>
     <div data-key="70" class="key">
       <kbd>F</kbd>
-      <span class="sound">---</span>
+      <span class="sound">uh</span>
     </div>
     <div data-key="71" class="key">
       <kbd>G</kbd>
-      <span class="sound">---</span>
+      <span class="sound">gbush</span>
     </div>
     <div data-key="72" class="key">
       <kbd>H</kbd>
-      <span class="sound">---</span>
+      <span class="sound">mayonaise</span>
     </div>
     <div data-key="74" class="key">
       <kbd>J</kbd>
-      <span class="sound">----</span>
+      <span class="sound">laughtrack</span>
     </div>
     <div data-key="75" class="key">
       <kbd>K</kbd>
-      <span class="sound">---</span>
+      <span class="sound">mumble4</span>
     </div>
     <div data-key="76" class="key">
       <kbd>L</kbd>
@@ -48,16 +48,33 @@
   </div>
 
   <audio data-key="65" src="sounds/deep-breath.mp3"></audio>
-  <audio data-key="83" src="sounds/yeezy-scream.mp3"></audio>
-  <audio data-key="68" src=""></audio>
-  <audio data-key="70" src=""></audio>
-  <audio data-key="71" src=""></audio>
-  <audio data-key="72" src=""></audio>
-  <audio data-key="74" src=""></audio>
-  <audio data-key="75" src=""></audio>
+  <audio data-key="83" src="sounds/scream1.mp3"></audio>
+  <audio data-key="68" src="sounds/scream2.mp3"></audio>
+  <audio data-key="70" src="sounds/uh.mp3"></audio>
+  <audio data-key="71" src="sounds/bush.mp3"></audio>
+  <audio data-key="72" src="/sounds/mayonaise.mp3"></audio>
+  <audio data-key="74" src="/sounds/laughtrack.mp3"></audio>
+  <audio data-key="75" src="sounds/mumble4.mp3"></audio>
   <audio data-key="76" src="/sounds/answers.mp3"></audio>
 
 <script src="script.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" ></script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+var images=['images/god1.jpeg', 'images/god2.jpg'];
+
+var randomNumber = Math.floor(Math.random() * images.length);
+var bgImg = 'url(' + images[randomNumber] + ')';
+
+$('body').css({'background':bgImg, 'background-size':'cover', });
+
+});
+ 
+ </script>
+
 
 
 </body>
