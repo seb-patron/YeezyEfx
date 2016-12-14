@@ -8,8 +8,15 @@ body,html {
   font-family: sans-serif;
 }
 
+p {
+  color: white;
+  text-align: center;
+}
+
 .keys {
   display:flex;
+  flex-wrap: wrap;
+  width: 1300px;
   flex:1;
   min-height:100vh;
   align-items: center;
