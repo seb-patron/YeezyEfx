@@ -16,7 +16,7 @@ p {
 .keys {
   display:flex;
   flex-wrap: wrap;
-  width: 1300px;
+  width: 1200px;
   flex:1;
   min-height:100vh;
   align-items: center;
@@ -30,7 +30,7 @@ p {
   font-size: 1.5rem;
   padding:1rem .5rem;
   transition:all .07s;
-  width:100px;
+  width:80px;
   text-align: center;
   color:white;
   background:rgba(0,0,0,0.4);
@@ -45,7 +45,7 @@ p {
 
 kbd {
   display: block;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .sound {
@@ -53,4 +53,12 @@ kbd {
   text-transform: uppercase;
   letter-spacing: 1px;
   color:#ffc600;
+}
+
+#id {
+  width: 1300px;
+}
+
+.middle-row {
+  width: 1300px;
 }
